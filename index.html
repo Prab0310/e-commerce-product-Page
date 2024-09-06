@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping Website</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="logo">
+        <img src="./fresh market.png" alt="grocery store Logo">
+      </div>
+      <div class="search-bar">
+        <input type="text" placeholder="Search for products here...">
+      </div>
+      <div class="user-actions">
+        <a href="#">Login</a>
+        <a href="#">Cart <span id="cart-count">0</span></a>
+      </div>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="#">All Categories</a></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Shop</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact us</a></li>
+        <li><a href="#">Account</a></li>
+      </ul>
+    </nav>
+    <div class="hero-section">
+      <img src="./grocery store picture.jpg" height="450px" width="100%" alt="Products Banner">
+      <div class="hero-text">
+        <h1>FRESH, AFFORDABLE, CONVENIENT</h1>
+        <hr><br>
+        <p>Your one-stop shop for all your Grocery needs</p>
+        <a href="#" class="btn">Shop Now</a>
+      </div>
+    </div>
+    <div class="main-content">
+        <aside class="cart-section">
+            <h2><u>Cart Items</u></h2>
+            <br>
+            <section id="cart-items">
+            </section>
+            <h2>Total Cost: $<span id="cart-total">0.00</span></h2>
+            <button onclick="clearCart()">Clear Cart</button>
+          </aside>
+     
+      <div class="product-section">
+        <h2 class="product-heading">Featured Products</h2>
+        <section class="product-listings" id="product-listings">
+        </section>
+      
+      </div>
+      <aside class="sidebar">
+        <h1>Categories</h1><br>
+        <ul>
+          <li>Fruits and Vegetables</li>
+          <li>Breakfast and Dairy</li>
+          <li>Snacks</li>
+          <li>Cold Drinks</li>
+          <li>Butter and Eggs</li>
+          <li>Frozen Food</li>
+          <li>Jam and Honey</li>
+          <li>Dairy Products</li>
+          <li>Bakery</li>
+          <li>Frozen Foods</li>
+          <li>Personal Care Items</li>
+          <li>Household Items</li>
+        </ul>
+      </aside>
+    </div>
+    <footer>
+      <p>&copy; 2024 Grocery Shopping Website. All rights reserved.</p>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
